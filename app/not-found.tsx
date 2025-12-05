@@ -26,10 +26,7 @@ export default function NotFound() {
   }, []);
 
   const handleHomeClick = () => {
-    // In Next.js, use:
-    // import { useRouter } from "next/navigation";
-    // const router = useRouter();
-    // router.push("/");
+    
     window.location.href = "/";
   };
 
@@ -92,7 +89,7 @@ export default function NotFound() {
     setIsRunning(!isRunning);
   };
 
-  // Don't render particles until mounted to avoid hydration mismatch
+  
   if (!mounted) {
     return (
       <main className="flex flex-col h-screen items-center justify-center bg-black text-white px-4 overflow-hidden relative">
@@ -151,7 +148,7 @@ export default function NotFound() {
         transition={{ type: "spring", stiffness: 260, damping: 20 }}
         className="text-center z-10"
       >
-        {/* Glitchy 404 with neon glow */}
+        {/* Glitchy 404*/}
         <motion.div
           animate={{
             textShadow: [
@@ -166,7 +163,7 @@ export default function NotFound() {
           404
         </motion.div>
 
-        {/* Elegant message */}
+        {/* message */}
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -182,10 +179,10 @@ export default function NotFound() {
           transition={{ delay: 0.5 }}
           className="text-gray-400 mb-12 text-base font-light"
         >
-          Don't worry, even the best explorers get lost sometimes.
+          Don't worry, wrong turns may lead to righ paths sometimes.
         </motion.p>
 
-        {/* Classy buttons */}
+        {/* buttons */}
         <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
           <motion.button
             whileHover={{ scale: 1.02 }}
