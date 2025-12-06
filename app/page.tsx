@@ -137,7 +137,7 @@ export default function Home() {
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
+          viewport={{ once: true }} 
           className="max-w-2xl text-center"
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-8">
