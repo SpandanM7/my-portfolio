@@ -36,7 +36,7 @@ export default function Home() {
         "MVVM architecture with repository pattern",
         "Sub-second latency across mobile and web platforms"
       ],
-      link: "#"
+      link: "https://github.com/SpandanM7/SUDHAAR-Civic-Reporting-System-Project"
     },
     {
       title: "3D Brain Tumor Segmentation",
@@ -48,7 +48,7 @@ export default function Home() {
         "78-82% mean Dice score achievement",
         "Interactive 3D slice viewer with color-coded regions"
       ],
-      link: "#"
+      link: "https://colab.research.google.com/drive/13gcDCenPh-Lkq7K6MMSY-Vx-dUAVQgLY#scrollTo=rfsq5t3DPajx"
     },
     {
       title: "SAR Image Colorization",
@@ -60,7 +60,7 @@ export default function Home() {
         "25% improvement in model training stability",
         "MLflow integration for experiment tracking"
       ],
-      link: "#"
+      link: "https://github.com/SpandanM7/SAR-colorization-SIH-2024/tree/main"
     }
   ];
 
@@ -375,6 +375,8 @@ export default function Home() {
                     <motion.a 
                       href={project.link}
                       className="text-gray-500 hover:text-white transition-colors"
+                      target="_blank"
+                      rel="noopener noreferrer"
                       aria-label="View project"
                       whileHover={{ rotate: 45, scale: 1.2 }}
                       transition={{ type: "spring", stiffness: 300 }}
@@ -576,7 +578,7 @@ export default function Home() {
               whileTap={{ scale: 0.95 }}
             >
               <Phone className="w-5 h-5" />
-              +91 6290480746
+              CALL
             </motion.a>
           </div>
 
